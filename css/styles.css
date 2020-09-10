@@ -1,0 +1,253 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+.navbar .nav-item
+{
+  padding:0px 20px;  
+}
+.navbar-right .nav-item
+{
+ padding:0px; 
+}
+.row-content {
+  margin: 0px auto;
+  padding: 10px;
+  border-bottom: 1px ridge;
+  min-height: 300px;
+   }
+
+@media(max-width: 479px)
+{
+.myheader {
+  margin: 29.2% auto;
+  padding:40px 0px;
+  color: floralwhite; }
+.pettagline
+{
+ display: none;
+}
+.footer
+{
+  background-image: url('img/pet7.png');
+  background-position:bottom ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+}
+}
+.navbar-brand span
+{
+  font-family: Brush Script MT, Brush Script Std, cursive; 
+  font-size: 30px;
+}
+.nav-container
+{
+margin: none;
+}
+@media(min-width: 480px)
+{
+.myheader {
+  margin: 164px auto;
+   padding:40px 0px;
+  color: floralwhite; }
+.pettagline
+{
+  position: absolute;
+   top:125px; 
+  padding-left: 8%;
+}
+.footer
+{
+  background:  url(img/foot-left.png) left bottom no-repeat , url(img/foot-right.png) right bottom no-repeat; 
+color: white;
+}
+}
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
+.btn-social-icon
+{
+  margin:0px 10px;
+border-radius: 50%;
+background-color: transparent;
+border: none;
+}
+.btn-social-icon:hover 
+{
+background-color: white;
+transform: scale(1.1);
+ border-radius: 50%;
+ padding: 5px;
+}
+.btn-social-icon:hover i
+{
+color: #849aff;
+}
+
+.nav-tabs
+{
+  background-color:#849aff; 
+  margin: 0px 40px;
+}
+.nav-tabs .nav-item
+{
+  width: 50%;
+}
+.footer-content a, .footer-copyright a
+{
+color: #404040;
+}
+.footer-content a:hover, .footer-copyright a:hover
+{
+color: #849aff;
+text-decoration-line: none;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; 
+
+}
+.petgradient
+{
+  background:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  background: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+}
+.gradient-text
+{
+color:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  color: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  color: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+
+}
+hr
+{
+ background:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  background: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%); 
+}
+.petblue
+{
+background-color: #8490ff;  
+}
+.petblue-light
+{
+background-color:#849aff; 
+}
+.navbar-dark {
+ background-blend-mode: overlay;
+ background-color: #8490ff;
+  background-image: url("img/navback.png"); background-size: 400px;
+}
+/*background-color: #8490ff;*/
+  }
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+  .img-fluid
+  {
+
+    max-height: 200px;
+  }
+
+.carousel {
+  background: #512DA8; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
+.modal .btn
+{
+ width: 80%;
+color: white;
+border-radius: 20px;
+}
+.modal input
+{
+
+border: none;
+border-bottom: 1px ridge;
+border-radius: 0px;
+}
+.modal input:focus
+{
+  
+}
+.modal .close:hover
+{
+  color: white;
+}
+.modal
+{
+  color: #404040;
+}
+.modal-header {
+  background:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  background: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%); 
+
+  color: white;
+   }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+ 
+   }
+.navbar .nav-link:hover {
+    transform: scale(1.1);
+}
+.modal .nav-tabs
+{
+  background-color: transparent;
+  margin: 0px;
+  width: 100%;
+  border: none;
+  margin-left: 20px;
+}
+ .nav-tabs , .tab-content
+   {
+    border: transparent;
+
+   }
+
+.nav-tabs .nav-item
+{
+  margin: 0px;
+  padding: 0px;
+}
+.nav-tabs .nav-link 
+{
+border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.nav-tabs .nav-link:hover 
+{
+  transform: scale(1.1);
+  border: none;
+}
+.nav-tabs .nav-item a.active span
+{
+ color: white;
+  background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
