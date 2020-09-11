@@ -1,0 +1,76 @@
+
+.animated-btn {
+	position: relative;
+	display: inline-block;
+	height: 54px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px;
+}
+.animated-btn span.left {
+	float: left;
+	border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
+}
+
+.animated-btn span.right {
+	float: right;
+	border-radius: 0 6px 6px 0;
+	-moz-border-radius: 0 6px 6px 0;
+	-webkit-border-radius: 0 6px 6px 0;
+}
+.animated-btn span.fa,
+.animated-btn span.title {
+	display: block;
+	position: relative;
+	line-height: 50px;
+	padding: 0 30px;
+	}
+
+.animated-btn span.fa {
+	color: white;
+	font-size: 25px;
+	background-color: #8490ff;
+}
+
+.animated-btn span.title {
+	background-color: #849aff;
+	color: white;
+}
+
+.animated-btn span.arrow-left,
+.animated-btn span.arrow-right {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 24px solid transparent;
+	border-bottom: 23px solid transparent;
+	-webkit-transition: all .15s;
+	-transition: all .15s;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+}
+
+.animated-btn.right span.arrow-left {
+	right: 0px;
+	-webkit-box-shadow: 10px 0 0 0 #8490ff, 10px 3px 0 0 #8490ff;
+	box-shadow: 10px 0 0 0 #8490ff, 10px 3px 0 0 #8490ff;
+	border-right: 10px solid #8490ff;
+}
+
+.animated-btn.left span.arrow-right {
+	left: 0px;
+	-webkit-box-shadow: -10px 0 0 0 #8490ff, -10px 3px 0 0 #8490ff;
+	box-shadow: -10px 0 0 0 #8490ff, -10px 3px 0 0 #8490ff;
+	border-left: 10px solid #8490ff;
+}
+
+.animated-btn:hover span.arrow-left {
+	right: 10px;
+}
+
+.animated-btn:hover span.arrow-right {
+	left: 10px;
+}

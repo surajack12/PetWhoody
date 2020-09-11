@@ -1,3 +1,7 @@
+body
+{
+  background-color: #f8f8ff !important;
+}
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -10,13 +14,13 @@
  padding:0px; 
 }
 .row-content {
-  margin: 0px auto;
+  margin: 40px auto;
   padding: 10px;
   border-bottom: 1px ridge;
   min-height: 300px;
    }
 
-@media(max-width: 479px)
+@media(max-width: 800px)
 {
 .myheader {
   margin: 29.2% auto;
@@ -47,7 +51,7 @@ margin: none;
 @media(min-width: 480px)
 {
 .myheader {
-  margin: 164px auto;
+  margin-top: 164px;
    padding:40px 0px;
   color: floralwhite; }
 .pettagline
@@ -149,11 +153,9 @@ background-color:#849aff;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px; }
-
-  .img-fluid
+  .adopt-donate
   {
-
-    max-height: 200px;
+    max-height: 400px;
   }
 
 .carousel {
@@ -249,5 +251,89 @@ border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
   background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+}
+.shadow
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+
+.animated-btn {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  line-height: 30px;
+  font-size: 16px;
+  
+  margin: 10px;
+  transform: scale(1.1);
+}
+.animated-btn span.left {
+  float: left;
+  border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+}
+
+.animated-btn span.right {
+  float: right;
+  border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+}
+.animated-btn span.fa,
+.animated-btn span.title {
+  display: block;
+  position: relative;
+  line-height: 50px;
+  padding: 0 30px;
+
+  }
+
+.animated-btn span.fa {
+  color: white;
+  font-size: 20px;
+  background-color: #8490ff;
+}
+
+.animated-btn span.title {
+  background-color: #849aff;
+  color: white;
+  font-weight: 500;
+}
+
+.animated-btn span.arrow-left,
+.animated-btn span.arrow-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 23px solid transparent;
+  -webkit-transition: all .15s;
+  -transition: all .15s;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+}
+
+.animated-btn.right span.arrow-left {
+  right: 0px;
+  -webkit-box-shadow: 10px 0 0 0 #8490ff, 10px 3px 0 0 #8490ff;
+  box-shadow: 10px 0 0 0 #8490ff, 10px 3px 0 0 #8490ff;
+  border-right: 10px solid #8490ff;
+}
+
+.animated-btn.left span.arrow-right {
+  left: 0px;
+  -webkit-box-shadow: -10px 0 0 0 #8490ff, -10px 3px 0 0 #8490ff;
+  box-shadow: -10px 0 0 0 #8490ff, -10px 3px 0 0 #8490ff;
+  border-left: 10px solid #8490ff;
+}
+
+.animated-btn:hover span.arrow-left {
+  right: 10px;
+}
+
+.animated-btn:hover span.arrow-right {
+  left: 10px;
 }
 
