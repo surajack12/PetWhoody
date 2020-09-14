@@ -1,3 +1,84 @@
+.member-header
+{
+	background-image: linear-gradient(10deg, 
+                    #8490ff 50%, #62bdfc 100%); 
+            background-image: -webkit-linear-gradient(10deg, 
+                    #8490ff 50%, #62bdfc 100%);
+                    background-image: -moz-linear-gradient(10deg, 
+                    #8490ff 50%, #62bdfc 100%);
+                    height: 150px;
+}
+.member-card
+{
+	position: relative;
+	top: -100px;
+}
+.pet-card:hover
+{
+	text-decoration: none;
+}
+.pet-card:hover .card
+{
+	filter: brightness(30%);
+}
+.pet-paw
+{opacity: 0;
+	z-index: 2;
+	color: white;
+	transition: 0.3s;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.pet-card:hover .pet-paw
+{color: white;
+	filter: brightness(100%);
+font-size: 50px !important;
+	opacity: 1;
+}
+.pet-img img
+{
+	height: 200px;width: 200px; border: 2px ridge; object-fit: cover;
+}
+         .pattern { 
+         
+        
+            position: relative; 
+            background-color: #3bb78f; 
+            background-image: linear-gradient(10deg, 
+                    #8490ff 50%, #62bdfc 100%); 
+            background-image: -webkit-linear-gradient(10deg, 
+                    #8490ff 50%, #62bdfc 100%);
+                    background-image: -moz-linear-gradient(10deg, 
+                    #8490ff 50%, #62bdfc 100%);  
+        z-index: 0;
+        background-size:auto 40%;
+        background-repeat: no-repeat;
+        } 
+  
+        .pattern:before { 
+          z-index: -1;
+            content: ""; 
+            position: absolute; 
+            bottom: 60%; 
+            left: 0; 
+            width: 100%; 
+            height: 250px; 
+            background: url(img/wave3.png); 
+            background-size: contain;
+            background-position: bottom; 
+            background-repeat: no-repeat;
+             
+        }
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 
 .animated-btn {
 	position: relative;
