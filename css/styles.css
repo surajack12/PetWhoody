@@ -366,10 +366,7 @@ font-size: 50px !important;
   height: 200px;width: 200px; border: 2px ridge; object-fit: cover;
 }
          .pattern { 
-         
-        
-            position: relative; 
-            background-color: #3bb78f; 
+            position: relative;  
             background-image: linear-gradient(10deg, 
                     #8490ff 50%, #62bdfc 100%); 
             background-image: -webkit-linear-gradient(10deg, 
