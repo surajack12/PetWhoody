@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&family=Lobster&display=swap');
+
 body
 {
   background-color: #f8f8ff !important;
@@ -8,6 +11,8 @@ body
 .navbar .nav-item
 {
   padding:0px 20px;  
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
 }
 .navbar-right .nav-item
 {
@@ -120,8 +125,8 @@ body {
 }
 .gradient-text
 {
-color:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
-  color: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
+color:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%) !important;
+  color: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%) !important;
   color: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
 
 }
@@ -298,6 +303,8 @@ border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
 .animated-btn span.title {
   background-color: #849aff;
   color: white;
+  font-family: 'Lobster Two', cursive;
+  letter-spacing: 1px;
   font-weight: 500;
 }
 
@@ -392,3 +399,10 @@ font-size: 50px !important;
             background-repeat: no-repeat;
              
         }
+        .main-heading
+{
+ font-family: 'El Messiri', sans-serif;
+ color: #8490ff ; 
+  text-shadow: 4px 4px 4px #aaa;
+  font-weight: 600;
+}
