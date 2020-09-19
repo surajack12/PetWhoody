@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.pacifo
+{
+font-family: 'Pacifico', cursive;
+}
+.lobster2
+{
+ font-family: 'Lobster Two', cursive;
+}
+.el-messiri
+{
+  font-family: 'El Messiri', sans-serif;
+}
 body
 {
   background-color: #f8f8ff !important;
@@ -125,10 +137,9 @@ body {
 }
 .gradient-text
 {
-color:-moz-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%) !important;
-  color: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%) !important;
-  color: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
-
+background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%) ;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 hr
 {
@@ -139,6 +150,10 @@ hr
 .petblue
 {
 background-color: #8490ff;  
+}
+.petblue-text
+{
+color: #8490ff;  
 }
 .petblue-light
 {
@@ -373,7 +388,10 @@ font-size: 50px !important;
 }
 .pet-img img
 {
-  height: 200px;width: 200px; border: 2px ridge; object-fit: cover;
+  height: 200px;
+  width: 200px; 
+  border: 2px ridge; 
+  object-fit: cover;
 }
          .pattern { 
             position: relative;  
