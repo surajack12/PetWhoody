@@ -85,13 +85,15 @@ color: white;
 address {
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f; }
+  color: #0f0f0f;
+   }
 .btn-social-icon
 {
   margin:0px 10px;
 border-radius: 50%;
+color: white !important;
 background-color: transparent;
-border: none;
+
 }
 .btn-social-icon:hover 
 {
@@ -164,9 +166,6 @@ background-color:#849aff;
  background-color: #8490ff;
   background-image: url("img/navback.png"); background-size: 400px;
 }
-/*background-color: #8490ff;*/
-  }
-
 .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
