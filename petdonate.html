@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 <link rel="stylesheet" href="css/styles.css">
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- endbuild-->
     <title>PetWhoody</title>
@@ -153,31 +153,71 @@
     </header>
     </div>
 
+    <div class="container p-0 p-md-auto">
+      <div style="background-color: white;" class=" row  row-content shadow p-0 pb-3 align-items-center">
+        <div class="col p-0 px-md-3">
+          <div class="row ">
+        <div style="margin: 0px;padding: 0px;" class="col-12 petgradient"><img style="margin: 0px;padding: 0px; height: 50px; width: 100%;" src="img/wave3.png"></div>
+     <div class="col-12 text-center"><h1  class="main-heading my-3">Tell Us About Your Pet</h1>
+            </div>
+            </div>
+     <div class="row">
+     <div class="col-12 col-md-8 p-5 text-center order-last order-md-first">
+      <div class="petform">
+        <div class="form-group  row mb-4 mb-md-5">
+          <div class="col-1 col-sm-1"><i class="fa fa-lg fa-paw prefix grey-text "></i></div>
+          <div class="col-auto col-sm-11"> <input placeholder="Enter Pet Name" type="text" id="pet-name" name="pet-name" class="form-control validate"></div>
+          
+        </div>
+        <div class="form-group  row mb-4  mb-md-5 ">
+          <div class="col-md-1 col-1"><i class="fa fa-lg fa-dog prefix grey-text "></i></div>
+          <div class="col-md-5 col-5"> <input placeholder="Pet Type (eg. Dog)" type="text" id="pet-type" name="pet-type" class="form-control validate"></div>
+          <div class="col-md-1 col-1"><i class="fa fa-lg fa-cat prefix grey-text "></i></div>
+          <div class="col-md-5 col-4"> <input placeholder="Pet Breed" type="text" id="pet-breed" name="pet-breed" class="form-control validate"></div>
+        </div>
+        <div class="form-group  row mb-4 mb-md-5">
+          <div class="col-md-1 col-1 mb-4 mb-md-0"><i class="fas fa-lg fa-palette prefix grey-text "></i></div>
+          <div class="col-md-4 col-auto mb-4 mb-md-0"> <input placeholder="Pet Color" type="text" id="pet-color" name="pet-color" class="form-control validate"></div>
+          <div class="w-100 d-md-none"></div>
+          <div class="col-md-1 col-1"><i class="fa fa-lg fa-calendar-alt prefix grey-text "></i></div>
+          <div class="col-md-3 col-5"> <input placeholder="Years" type="number" min="0" id="pet-age-year" name="pet-age-year" class="form-control validate"></div>
+          <div class="col-md-3 col-5"> <input placeholder="Months" type="number" min="0" max="12" id="pet-age-month" name="pet-age-month" class="form-control validate"></div>
+        </div>
+         <div class="form-group  row mb-4 mb-md-5">
+          <div class="col-1"><i class="fa fa-lg fa-city prefix grey-text "></i></div>
+          <div class="col-4 "> <input placeholder="City" type="text" id="pet-city" name="pet-city" class="form-control validate"></div>
+          <div class="col-1"><i class="fa fa-lg fa-building prefix grey-text "></i></div>
+          <div class="col-5"> <input placeholder="State" type="text" id="pet-state" name="pet-state" class="form-control validate"></div>
+        </div>
 
-    <div class="container">
-      <div style="background-color: white;" class=" row  row-content shadow p-0 pb-3">
-     <div style="margin: 0px;padding: 0px;" class="col-12 petgradient"><img style="margin: 0px;padding: 0px; height: 50px; width: 100%;" src="img/wave3.png"></div>
-     <div class="col-12 col-md-4 text-center">
-      <div  class="w-100 ">
-        <img style="  height:300px;
-        width: 300px; 
-  border: 2px ridge; 
-  object-fit: cover;" src="img/leo.jpg" class="rounded-circle z-depth-1 img-fluid shadow " alt="Sample avatar">
+        <div class="form-group row mb-5">
+          <div class="col-2 col-sm-1"><i class="fa fa-lg fa-map-marker-alt prefix grey-text "></i></div>
+          <div class=" col-10 col-sm-11"> <input placeholder="Enter Address" type="text" id="pet-address" name="pet-address" class="form-control validate"></div>
+          
+        </div>
+        
+        <div class=" mb-4 text-center">
+        <button class="btn shadow petgradient">Submit <span class="fa fa-arrow-circle-right "></span></button>
+        
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-md-8 text-md-left text-center">
-      <h1 style="margin:20px 0px; " class="pacifo  petblue-text ">Leo <span style="font-size: 30px;">, 2 years old</span> </h1>
-      <hr >
-      <h2 style="margin:20px 0px; " class="text-dark el-messiri">  Labrador | Dog | Young</h2>
-      <h3 style="margin:20px 0px; " class="text-dark el-messiri"> Bhopal,Madhya Pradesh </h3>
-      <a href="#" class="animated-btn left mr-4">
+        </div>
+         <div class="col-12  col-md-4 order-first order-md-last text-center">
+          <div class="row"><div class="col-12 text-center imgUp">
+    <div class="imagePreview"></div><br>
+        <label class="animated-btn btn left m-0">
         <span class="left fa fa-camera shadow"></span>
-        <span class="right title "><span class="arrow-right "></span>View Photos</span>
-      </a>
-       <a href="#" class=" animated-btn right">
-        <span class="left title shadow"><span class="arrow-left"></span>Ask About Leo</span>
-        <span class="right fa fa-question-circle "></span>
-      </a>
+        <span class="right title ">
+          <span class="arrow-right "></span>Upload</span>
+        <input type="file" class="uploadFile img" name="pet-image" id="pet-image" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+      </label>
+  </div><!-- col-2 -->
+  <div class="col-12">
+            <img src="img/6.jpg" class="img-fluid adopt-donate">
+          </div>
+      </div>
+    </div>  
+     </div>
     </div>
   </div>
      <div class="row row-content shadow">
@@ -262,7 +302,6 @@
         </div>
         </div>
     </div>
- 
 <footer style="background-color: #eceff1;" class="footer">
 
   <div class="petgradient ">
@@ -371,7 +410,6 @@
     <a  href="petindex.html"> PetWhoody.com</a>
   </div>
 </footer>
-
 
 </body>
 <meta charset="utf-8">
