@@ -174,10 +174,12 @@
         </div>
         <div class="form-group  row mb-4 mb-md-5">
           <div class="col-1 mb-4 mb-md-auto"><i class="fa fa-lg fa-palette prefix grey-text "></i></div>
-          <div class="col-10 mb-4 mb-md-auto col-md-4 "><input placeholder="Pet Color" type="text" id="pet-color" name="pet-color" class="form-control validate"></div>
+          <div class="col-11 mb-4 mb-md-auto col-md-4 "><input placeholder="Pet Color" type="text" id="pet-color" name="pet-color" class="form-control validate"></div>
           <div class="col-1"><i class="fa fa-lg fa-rupee prefix grey-text "></i></div>
-          <div class="col-6 col-md-4">  <input placeholder="Adoption Fee" type="number" min="0" max="12" id="pet-age-month" name="pet-age-month" class="form-control validate"></div>
-          <div class="col-4 col-md-2"><button id="btn-free" class="btn btn-success btn-free h-100 btn-block visible">Free</button><button class="btn btn-danger btn-notfree h-100 btn-block invisible" id="btn-notfree">Not Free</button></div>
+          <div class="col-6 col-md-4">  <input placeholder="Adoption Fee" type="number" id="pet-fee" name="pet-fee" class="form-control validate"></div>
+          <div class="col-4 col-md-2"><label style="font-weight: 600;" for="btn-free" class=" btn btn-success btn-free">Free ?<input type="checkbox" id="btn-free" onclick="disableadoptionfee(this)" class="badgebox"><span class="badge">&check;</span></label>
+</div>
+      
         </div>
          <div class="form-group  row mb-4 mb-md-5">
           <div class="col-1"><i class="fa fa-lg fa-calendar-alt prefix grey-text "></i></div>
@@ -198,7 +200,7 @@
         </div>
         
         <div class=" mb-4 text-center">
-        <button class="btn shadow petgradient">Submit <span class="fa fa-arrow-circle-right "></span></button>
+        <button class="btn btn-submit shadow petgradient">Submit <span class="fa fa-arrow-circle-right "></span></button>
         
         </div>
       </div>

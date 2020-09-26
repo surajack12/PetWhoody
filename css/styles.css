@@ -191,10 +191,12 @@ background-color:#849aff;
   position: absolute;
   bottom: 0px;
   z-index: 1; }
-.petform .btn
+.petform .btn-submit
 {
  width: 80%;
 color: white;
+padding-left: 0px;
+padding-right: 0px; 
 border-radius: 20px;
 }
 .petform input
@@ -275,16 +277,6 @@ border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 
-.btn-free
-{
-transition: 0.3s;
-position: absolute;
-}
-.btn-notfree
-{
-  position: absolute;
-transition: 0.3s;
-}
 .animated-btn {
   position: relative;
   display: inline-block;
@@ -564,3 +556,99 @@ font-size: 50px !important;
   left: -8px;
   top: 15px;
 }
+.opacity-0
+{
+  opacity: 0 !important;
+}
+.opacity-1
+{
+  opacity: 1 !important;
+}
+.btn-free
+{
+  color: white !important;
+}
+.btn-free .badgebox
+{
+    opacity: 0;
+}
+
+ .btn-free .badgebox + .badge
+{
+    text-indent: -999999px;
+  width: 25px;
+}
+.btn-free .badge
+{
+  border: 2px solid white;
+}
+
+.btn-free .badgebox:focus + .badge
+{
+    box-shadow: inset 0px 0px 5px;
+}
+
+.btn-free .badgebox:checked + .badge
+{
+  text-indent: 0;
+}
+
+
+.petsearchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    }
+    .petsearch{
+      position: absolute;
+      top: 50%;
+transform: translateY(-50%);
+    color: white !important;
+    border: 0 !important;
+    width: 100% !important;
+    outline: 0 !important;
+    background: none !important;    
+    }
+
+    .petsearch::placeholder
+    {
+     color:rgba(255,255,255,0.7) !important;
+    }
+    .petsearch::-webkit-input-placeholder
+    {
+     color:rgba(255,255,255,0.7) !important;
+    }
+    .petsearch::-moz-input-placeholder
+    {
+     color:rgba(255,255,255,0.7) !important;
+    }
+ 
+    .petsearch-icon{
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#8490ff;
+    text-decoration:none;
+  }  
+    .petsearch-free
+    {
+     margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    font-size:20px; 
+    font-weight: 600;
+    padding: 10px;
+    }

@@ -5,16 +5,21 @@ $('#loginModal').modal();
            $('#registerTrigger').click(function(){
 $('#registerModal').modal();
            });
-           $('#btn-free').click(function(){
-            
-            replaceClass("btn-free","visible","invisible");
-            replaceClass("btn-notfree","invisible","visible");
-             });
-           $('#btn-notfree').click(function(){
-            replaceClass("btn-notfree","visible","invisible");
-            replaceClass("btn-free","invisible","visible");
-           });
+$("#petsearch").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#petgrid .pet-col").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });           
         });
+ function disableadoptionfee(checkfree) {
+        var petfee = document.getElementById("pet-fee");
+        petfee.value=0;
+        petfee.disabled = !checkfree.checked ? false : true;
+        if (!petfee.disabled) {
+            petfee.focus();
+        }
+    }
 function replaceClass(id, oldClass, newClass) {
   var elem =document.getElementById(id);
   
