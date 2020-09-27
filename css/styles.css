@@ -652,6 +652,7 @@ transform: translateY(-50%);
     }
 
     .switch {
+
   position: relative;
   display: inline-block;
   width: 60px;
