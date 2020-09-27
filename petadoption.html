@@ -35,7 +35,7 @@
                <ul class="navbar-nav mr-auto">  
                      <li class="nav-item active "><a  class="nav-link nav-link-fade-up" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About Us</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-paw fa-lg"></span> Pet Adoption</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./petadoption.html"><span class="fa fa-paw fa-lg"></span> Pet Adoption</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-inr fa-lg"></span> Donations </a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-question-circle fa-lg"></span> Faqs </a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
@@ -159,11 +159,14 @@
      <div class="col-12 text-center"><h1  class="main-heading my-3">Pets For Adoption</h1>
             </div>
             </div>
-            <div class="row">
-               <div class="col-md-2 d-none d-md-block col-12 text-center"> <div class="w-50 petgradient petsearch-free">Free <input style="height: 15px;width: 15px;" type="checkbox" name=""></div>
+            <div  class="row ">
+               <div  class="col-md-3 col-lg-2 col-5 my-2 my-md-0 text-center"> 
+                <div  class=" petgradient petsearch-free shadow">Free <label class="switch"><input id="chkfree" onclick="filterfree(this)" type="checkbox">
+                                                              <span  class="slider round"></span>
+                                                             </label></div>
                </div>
-        <div class="col-12 col-md-6  offset-md-4 order-last ">
-           <div class="petsearchbar petgradient">
+        <div class="col-12 col-md-6  offset-md-3 order-last ">
+           <div class="petsearchbar petgradient shadow">
           <input class="petsearch " id="petsearch" type="text" name="" placeholder="Search by Type , Breed , Color">
           <span class="petsearch-icon"><i class="fa fa-search"></i></span>
         </div>
