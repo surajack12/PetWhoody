@@ -20,16 +20,13 @@ html
 body
 {
   background-color: #f8f8ff !important;
-    padding: 50px 0px 0px 0px; 
+   
 }
-.row-header {
-  margin: 0px auto;
-  padding: 0px 0px; }
 .navbar .nav-item
 {
-  padding:0px 20px;  
+  padding:0px 10px;  
   font-family: 'Lobster Two', cursive;
-  font-size: 20px;
+  font-size: 19px;
 }
 .navbar-right .nav-item
 {
@@ -43,14 +40,6 @@ body
 
 @media(max-width: 800px)
 {
-.myheader {
-  margin-top :29.2%;
-  padding:40px 0px;
-  color: floralwhite; }
-.pettagline
-{
- display: none;
-}
 .footer
 {
   background-image: url('img/pet7.png');
@@ -72,22 +61,30 @@ margin: none;
 }
 @media(min-width: 480px)
 {
-.myheader {
-  margin-top: 164px;
-   padding:40px 0px;
-  color: floralwhite; }
-.pettagline
-{
-  position: absolute;
-   top:125px; 
-  padding-left: 8%;
-}
 .footer
 {
   background:  url(img/foot-left.png) left bottom no-repeat , url(img/foot-right.png) right bottom no-repeat; 
 color: white;
 }
 }
+.petheader {
+ margin-top: 80px !important;
+  color: floralwhite; 
+}
+.pettagline
+{
+  color: #212121;
+ position: relative;
+ top:50% !important;
+}
+.header-img
+{
+  position: relative;bottom: -59px !important; 
+  height: 180px !important;
+}
+.row-header {
+ background-color:#8490ff ;
+ }
 address {
   font-size: 80%;
   margin: 0px;
@@ -163,6 +160,7 @@ color: #8490ff;
 background-color:#849aff; 
 }
 .navbar-dark {
+height: 80px;
  background-blend-mode: overlay;
  background-color: #8490ff;
   background-image: url("img/navback.png"); background-size: 400px;
