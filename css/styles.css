@@ -615,7 +615,7 @@ font-size: 50px !important;
 transform: translateY(-50%);
     color: white !important;
     border: 0 !important;
-    
+    outline: none;
     background: none !important;    
     }
 
