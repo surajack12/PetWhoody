@@ -9,12 +9,11 @@
 
     <!-- Bootstrap CSS -->
      <!-- build:css css/main.css -->
-   
-      <link rel="stylesheet" href="css/main1.css">
+     <link rel="stylesheet" href="css/main1.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 <link rel="stylesheet" href="css/styles.css">
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- endbuild-->
     <title>PetWhoody</title>
@@ -22,7 +21,7 @@
 </head>
 
 <body style=" ">
-    <nav style="" class="navbar navbar-dark navbar-expand-sm fixed-top shadow">
+    <nav style="" class="navbar navbar-dark navbar-expand-md fixed-top shadow">
         <div  style="" class="container-fluid">
             <div class="navbar-header">
       <a class="navbar-brand mr-auto " href="#"><img src="css/img/logo4.png" height="50" width="200" > </a>
@@ -36,14 +35,14 @@
                <ul class="navbar-nav mr-auto">  
                      <li class="nav-item active "><a  class="nav-link nav-link-fade-up" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About Us</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-paw fa-lg"></span> Pet Adoption</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-inr fa-lg"></span> Donations </a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./petadoption.html"><span class="fa fa-paw fa-lg"></span> Pet Adoption</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./petarticle.html"><span class="fa fa-newspaper-o fa-lg"></span> Pet Articles </a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-question-circle fa-lg"></span> Faqs </a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul> 
                 <ul class="navbar-nav navbar-right">  
-                     <li class="nav-item active"><a class="nav-link" id="loginTrigger" href="#"><span class="fa fa fa-sign-in "></span> Login / <span class="fa fa fa-user "></span> Register</a></li>
-                    <li class="nav-item active d-none"><a class="nav-link " id="loginTrigger" href="#"><span class="fa fa fa-user "></span> Ankit Sisodiya </a></li>
+                     <li class="nav-item active"><a class="nav-link" id="loginTrigger" href="#"><span class="fa fa-sign-in-alt "></span> Login / <span class="fa fa fa-user "></span> Register</a></li>
+                    
                  </ul>
                 </div>
                           
@@ -84,7 +83,8 @@
         </div>
         <div class="form-group row mb-5">
           <div class="col-2 col-sm-1"><i class="fa fa-lg fa-lock prefix grey-text "></i></div>
-          <div class=" col-10 col-sm-11"> <input placeholder="Enter Password" type="password" id="orangeForm-name" class="form-control validate"></div>
+          <div class=" col-10 col-sm-11"> <input placeholder="Enter Password" type="password" id="orangeForm-name" class="form-cont
+            rol validate"></div>
           
         </div>
         
@@ -113,7 +113,7 @@
         </div>
         
         <div class="md-form mb-4 text-center">
-        <button class="btn petgradient shadow btn-submit">Register <span class="fa fa-user-plus "></span></button>
+        <button class="btn btn-submit shadow petgradient">Register <span class="fa fa-user-plus "></span></button>
         </div>
       </div>
   </div>
@@ -121,7 +121,7 @@
   </div>
 </div>
 </div>
-
+     
 <header class="container-fluid petheader">
   <div class="row">
    <div class="col-12 col-md-6 d-none d-md-block text-center ">
@@ -150,83 +150,71 @@
             </div>
   </div>
 </header>
-<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal  fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-header petarticle-header shadow  el-messiri">
+ <span id="article-head"></span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+      </div>                      
+      <div  class="modal-body mt-3 mb-3 shadow mx-3">
+       <blockquote id="article-content" class="blockquote mb-0">
+          </blockquote>
       </div>
-      <div class="modal-body">
-        <img src="img/demopet2.jpg" class="img-fluid">
-      </div>
-    </div>
   </div>
 </div>
-<div class="modal fade" id="petownermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h2 class="modal-title el-messiri" id="exampleModalCenterTitle">Ask About Leo</h2>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="mx-4 p-2 shadow">
-        <h2 class="petblue-text pacifo my-4">Ankit Sisodiya</h2>
-       <a href="tel:9407296211" ><h4 class="  el-messiri text-dark  mx-2 my-4"><i class="fa fa-phone-alt mx-2"></i> 9407296211</h4></a>
-       <a href="mailto:ankit@gmail.com" ><h4 class="  el-messiri  text-dark mx-2 my-4"><i class="fa fa-envelope mx-2"></i> ankit@gmail.com</h4></a>
-        <h4 href="mailto:ankit@gmail.com" class=" el-messiri text-dark mx-2 my-4"><i class="fa fa-address-card mx-2"></i> 68,Electronic Market,Itwara Road,Bhopal</h4>
-        
-      </div>
-
-      </div>
-    </div>
-  </div>
 </div>
-    <div class="container">
+    <div class="container  ">
       <div style="background-color: white;" class=" row  row-content shadow p-0 pb-3">
-     <div style="margin: 0px;padding: 0px;" class="col-12 petgradient"><img style="margin: 0px;padding: 0px; height: 50px; width: 100%;" src="img/wave3.png"></div>
-     <div class="col-12 col-md-4 text-center">
-      <!-- <div  class="w-100 ">
-        <img style="  height:300px;
-        width: 300px; 
-  border: 2px ridge; 
-  object-fit: cover;" src="img/leo.jpg" class="rounded-circle z-depth-1 img-fluid shadow " alt="Sample avatar">
-      </div> -->
-<img style="border:2px ridge #8490ff;max-height: 350px;" id="img-prev" class="img-fluid d-inline-block rounded p-1" src="img/demopet2.jpg" alt="your image" />
-    <br>
-<a type="button"  data-toggle="modal" data-target="#imageModal" class="animated-btn left mr-4">
-        <span class="left fa fa-camera shadow"></span>
-        <span class="right title "><span class="arrow-right "></span>View Photo</span>
-      </a>
-    </div>
-    <div class="col-12 col-md-8 text-md-left text-center">
-      <h1 style="margin:20px 0px; " class="pacifo  petblue-text ">Leo <span style="font-size: 30px;">, 2 years old</span> <p class="petdetail-price"><i class="fa fa-rupee"></i> 200</p></h1>
-
-      <hr >
-      <h2 style="margin:20px 0px; " class="text-dark el-messiri">  Labrador | Dog </h2>
-      <h3 style="margin:20px 0px; " class="text-dark el-messiri"><i class="fa fa-birthday-cake"></i> 22 August 2017 </h3>
-      <h3 style="margin:20px 0px; " class="text-dark el-messiri"><i class="fa fa-address-card"></i> 101,Ivory Phase 2, New Market </h3>
-      <h3 style="margin:20px 0px; " class="text-dark el-messiri"><i class="fa fa-map-marker-alt"></i> Bhopal,Madhya Pradesh </h3>
-     <!--  <a href="#" class="animated-btn left mr-4">
-        <span class="left fa fa-camera shadow"></span>
-        <span class="right title "><span class="arrow-right "></span>View Photos</span>
-      </a> -->
-       <a type="button"  data-toggle="modal" data-target="#petownermodal" class=" animated-btn right">
-        <span class="left title shadow"><span class="arrow-left"></span>Ask About Leo</span>
-        <span class="right fa fa-question-circle "></span>
-      </a>
-    </div>
-  </div>
+     <div class="col">
+      
+       <div class="row ">
+        <div style="margin: 0px;padding: 0px;" class="col-12 petgradient"><img style="margin: 0px;padding: 0px; height: 50px; width: 100%;" src="img/wave3.png"></div>
+     <div class="col-12 text-center"><h1  class="main-heading my-3">About PetWhoody</h1>
+            </div>
+            </div>
+            <div  class="row ">
+        <div class="col-8 align-self-center px-5 h5 ">
+          The number of euthanized animals could be reduced dramatically if more people adopted pets instead of buying them. When you adopt, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.
+        </div>
+        <div class="col-4 text-center">
+          <img src="img/1.png" class="img-fluid d-inline-block" >
+        </div>
+      </div>
+      <div  class="row ">
+        <div class="col-8 align-self-center px-5 h5 ">
+          The number of euthanized animals could be reduced dramatically if more people adopted pets instead of buying them. When you adopt, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.
+        </div>
+        <div class="col-4 order-first text-center">
+          <img src="img/2.png" class="img-fluid d-inline-block" >
+        </div>
+      </div>
+      <div  class="row ">
+        <div class="col-8 align-self-center px-5 h5 ">
+          The number of euthanized animals could be reduced dramatically if more people adopted pets instead of buying them. When you adopt, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.
+        </div>
+        <div class="col-4 text-center">
+          <img src="img/3.png" class="img-fluid d-inline-block" >
+        </div>
+      </div>
+      <div  class="row ">
+        <div class="col-8 align-self-center px-5 h5 ">
+          The number of euthanized animals could be reduced dramatically if more people adopted pets instead of buying them. When you adopt, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.
+        </div>
+        <div class="col-4 order-first text-center">
+          <img src="img/4.png" class="img-fluid d-inline-block" >
+        </div>
+      </div>
+     </div>
+   </div>
      <div class="row row-content shadow">
           <div class="col-12 text-center"><h1  class="main-heading my-3">Recommened Pets For You</h1>
             <hr class="w-50 ">
             </div>
-          <div class="col-lg-3 col-md-6 py-4">
-          <a href="#" class="pet-card ">
+          <div class="col-lg-3 pet-col col-md-6 py-4">
+          <a href="./petdetail.html" class="pet-card ">
          <i class="fa fa-paw pet-icon"></i>
          <div class="pattern card shadow text-center">
           
@@ -246,7 +234,7 @@
       
        </a>
         </div>
-        <div class="col-lg-3 col-md-6 py-4">
+        <div class="col-lg-3 pet-col col-md-6 py-4">
           <a href="#" class="pet-card ">
          <i class="fa fa-paw pet-icon"></i>
          <div class="pattern card shadow text-center">
@@ -266,7 +254,7 @@
          <p class="pet-price"><i class="fa fa-rupee"></i> FREE</p>
        </a>
         </div>
-        <div class="col-lg-3 col-md-6 py-4">
+        <div class="col-lg-3 pet-col col-md-6 py-4">
           <a href="#" class="pet-card ">
          <i class="fa fa-paw pet-icon"></i>
          <div class="pattern card shadow text-center">
@@ -286,7 +274,7 @@
        <p class="pet-price"><i class="fa fa-rupee"></i> 200</p>
        </a>
         </div>
-        <div class="col-lg-3 col-md-6 py-4">
+        <div class="col-lg-3 pet-col col-md-6 py-4">
           <a href="#" class="pet-card ">
          <i class="fa fa-paw pet-icon"></i>
          <div class="pattern card shadow text-center">
@@ -308,7 +296,6 @@
         </div>
         </div>
     </div>
- 
 <footer style="background-color: #eceff1;" class="footer">
 
   <div class="petgradient ">
@@ -320,22 +307,20 @@
         </div>
   
         <div  class="col-md-6 col-lg-7 text-center text-md-right">
-
-          
           <a class="btn btn-social-icon btn-facebook">
-            <i class="fa fa-facebook-f white-text mr-4"> </i>
+            <i class="fab fa-facebook-f mr-4"> </i>
           </a>
           <a class="btn btn-social-icon btn-twitter">
-            <i class="fa fa-twitter white-text mr-4"> </i>
+            <i class="fab fa-twitter mr-4"> </i>
           </a>
           <a class="btn btn-social-icon btn-google">
-            <i class="fa fa-google-plus white-text mr-4"> </i>
+            <i class="fab fa-google white-text mr-4"> </i>
           </a>
           <a class="btn btn-social-icon btn-linkedin">
-            <i class="fa fa-linkedin white-text mr-4"> </i>
+            <i class="fab fa-linkedin white-text mr-4"> </i>
           </a>
           <a class="btn btn-social-icon btn-instagram">
-            <i class="fa fa-instagram white-text"> </i>
+            <i class="fab fa-instagram white-text"> </i>
           </a>
 
         </div>
@@ -395,7 +380,7 @@
         </p>
 
       </div>
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      <div class="col-md-4 col-lg-3 pet-col col-xl-3 mx-auto mb-md-0 mb-4">
         <h6 class="text-uppercase font-weight-bold">Contact</h6>
         <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
         <p>
@@ -418,17 +403,13 @@
   </div>
 </footer>
 
-
 </body>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-     <!-- build:js js/main.js -->
+ <!-- build:js js/main.js -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 </html>

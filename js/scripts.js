@@ -8,10 +8,20 @@ $('#registerModal').modal();
 
 $("#petsearch").on("keyup", function() {
      var value = $(this).val().toLowerCase();
-    $("#petgrid .pet-col").filter(function() {
+     $("#petgrid .pet-col").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
+// $("#feefilter").on("change", function() {
+//      // var value = $(this).val().toLowerCase();
+//      var value=parseInt("190");
+//     $("#petgrid .pet-col").filter(function() {
+//       // $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//       $(this).toggle(parseInt($(this).find('.pet-price').text())>value)
+//       // parseInt($(this ".pet-price").text().toLowerCase())>value
+//     });
+//   });
+
   $("#articlesearch").on("keyup", function() {
      var value = $(this).val().toLowerCase();
     $("#pet-articles .article-col").filter(function() {
@@ -96,3 +106,22 @@ uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(
       
     });
 });
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#img-prev').attr('src', e.target.result);
+      $('#img-prev').removeClass("p-5");
+      $('#img-prev').addClass("p-1");
+    }
+    
+    reader.readAsDataURL(input.files[0]); // convert to base64 string
+  }
+}
+
+$("#pet-img").change(function() {
+  readURL(this);
+});
+
