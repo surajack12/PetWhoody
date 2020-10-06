@@ -6,39 +6,13 @@ $('#loginModal').modal();
 $('#registerModal').modal();
            });     
 
-// $("#petsearch").on("keyup", function() {
-//      var value = $(this).val().toLowerCase();
-//      $("#petgrid .pet-col").filter(function() {
-//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-//     });
-//   });
-// $("#pet-range").on("change", function() {
-//   var key = $("#petsearch").val().toLowerCase();
-//      var l = parseInt($(this).val());
-//      var r;
-//      if(l==50000)
-//      {
-//       r=999999;
 
-//      }   
-//     else
-//     {
-//       r=l+10000;
-//     }
-//     $("#petgrid .pet-col").filter(function() {
-//       $(this).toggle(
-//         ((parseInt($(this).find('.pet-price').text())>l)&&(parseInt($(this).find('.pet-price').text())<r))&&
-//         ($(this).text().toLowerCase().indexOf(key) > -1)
-//         )
-//     });
-//   });
-
-//   $("#articlesearch").on("keyup", function() {
-//      var value = $(this).val().toLowerCase();
-//     $("#pet-articles .article-col").filter(function() {
-//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-//     });
-//   });           
+  $("#articlesearch").on("keyup", function() {
+     var value = $(this).val().toLowerCase();
+    $("#pet-articles .article-col").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });           
 $("#petsearch").on("keyup", function() {
 filterpets();
   });
@@ -46,6 +20,7 @@ $("#pet-range").on("change", function() {
 filterpets();
 });
 $("#chkfree").on("click", function() {
+$("#pet-range").val("-1");
 filterpets();
 });
         });
@@ -72,7 +47,6 @@ function filterpets()
     if($("#chkfree").prop('checked'))
     {
       free="free";
-
     }
         $(this).toggle(
         ($(this).text().toLowerCase().indexOf(key) > -1)&&
@@ -98,19 +72,7 @@ function showArticle(articles)
 $('#article-head').text(head);
 $('#article-content').html(body);
 }
-// function filterfree(chkfree) {
-//         if(chkfree.checked) 
-//         {
-//            var value = "free";
-//           $("#petgrid .pet-col").filter(function() {
-//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-//     });
-//         }
-//         else
-//         {
-//           $("#petgrid .pet-col").show();
-//         }
-//     }
+
  function disableadoptionfee(checkfree) {
         var petfee = document.getElementById("pet-fee");
         petfee.value=0;
