@@ -185,7 +185,7 @@
         <div class="form-group row mb-4 mb-md-5">
           <div class="col-1"><i class="fa fa-lg fa-rupee prefix grey-text "></i></div>
           <div class="col-6 col-md-4">  <input placeholder="Adoption Fee" type="number" id="pet-fee" name="pet-fee" class="form-control validate"></div>
-          <div class="col-4 col-md-3"><label style="font-weight: 600;" for="btn-free" class="d-inline-block btn btn-success btn-free">Free ?<input type="checkbox" id="btn-free" onclick="disableadoptionfee(this)" class="badgebox"><span class="badge">&check;</span></label>
+          <div class="col-4 col-md-3"><label style="font-weight: 600;" for="btn-free" class="d-block btn btn-success btn-free ml-0 pl-0">Free ?<input type="checkbox" id="btn-free" onclick="disableadoptionfee(this)" class="badgebox"><span class="badge">&check;</span></label>
 </div>
   
 </div>
@@ -200,7 +200,15 @@
           <div class="col-1"><i class="fa fa-lg fa-map-marker-alt prefix grey-text "></i></div>
           <div class=" col-11"> <input placeholder="Enter Address" type="text" id="pet-address" name="pet-address" class="form-control validate"></div>
         </div>
-        
+         <div class="form-group row mb-5">
+          <div class="col-1"><i class="fa fa-lg fa-question-circle prefix grey-text "></i></div>
+          <div class=" col">
+<label for="pet-desc" class="float-left">Additional Details</label>
+            <textarea id="pet-desc" class=" form-control" rows="3">
+          </textarea>
+
+          </div>
+        </div>
         <div class=" mb-4 text-center">
         <button class="btn btn-submit shadow petgradient">Submit <span class="fa fa-arrow-circle-right "></span></button>
         

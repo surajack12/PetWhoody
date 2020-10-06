@@ -158,17 +158,22 @@
      <div class="col-12 text-center"><h1  class="main-heading my-3">Pets For Adoption</h1>
             </div>
             </div>
-            <div  class="row ">
+            <div  class="row no-gutters">
                <div  class="col-md-3 col-lg-2 col-6 my-2 my-md-0 "> 
                 <div style="display: inline-block;"  class=" petgradient petsearch-free shadow">Free <label class="switch"><input id="chkfree" onclick="filterfree(this)" type="checkbox">
-                                                              <span  class="slider round"></span>
-                                                             </label></div>
+                <span  class="slider round"></span>
+                </label></div>
                </div>
                <div class="col-md-3 col-lg-2 col-6 my-2 my-md-0 ">
-                 <select style=""  class=" petgradient h-100 shadow pet-range form-control-lg">
-  <option>Default select</option>
-  <option>Default select</option>
-  <option>Default select</option>
+                 <select id="pet-range" class=" petgradient h-100 shadow pet-range form-control ">
+<option value="-1" hidden selected class="el-messiri"> Price Range </option>
+  <option value="-1" class="el-messiri"> All </option>
+  <option value="0" class="pacifo"><10000</option>
+  <option value="10000" class="pacifo">10000-20000</option>
+  <option value="20000" class="pacifo">20000-30000</option>
+  <option class="pacifo">30000-40000</option>
+  <option class="pacifo">40000-50000</option>
+  <option class="pacifo">>50000</option>
 </select>
                </div>
         <div class="col-12 col-md-6 offset-lg-2 offset-md-3 order-last ">
@@ -237,7 +242,7 @@
       </div>
       </p>
          </div>
-       <p class="pet-price"><i class="fa fa-rupee"></i> 200</p>
+       <p class="pet-price"><i class="fa fa-rupee"></i> 15000</p>
        </a>
         </div>
         <div class="col-lg-3 pet-col col-md-6 py-4">
