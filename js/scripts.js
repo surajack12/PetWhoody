@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  $('html,body').animate({
+        scrollTop: $('#main-container').offset().top-100
+    }, 'slow');
+  
            $('#loginTrigger').click(function(){
 $('#loginModal').modal();
            });
